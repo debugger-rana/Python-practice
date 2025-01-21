@@ -7,3 +7,4 @@
 # print(arr)
 # print(id(arr))
 
+#help(array)
