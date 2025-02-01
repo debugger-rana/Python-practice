@@ -11,7 +11,7 @@ def fibo(n):
             print(b)
             for i in range(2,n):
                 c=a+b
-                if(c==n):break
+                if(c>n):break
                 else:
                     print(c)
                     a=b
