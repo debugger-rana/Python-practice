@@ -1,0 +1,23 @@
+In Python, the __name__ variable is a special built-in variable that indicates the name of the module currently being executed. It helps determine whether a module is being run as the main program or being imported into another module. Here’s a brief explanation:
+
+When a module is run directly:
+
+The __name__ variable is set to "__main__".
+This allows you to write code that only runs when the module is executed directly, not when it is imported.
+When a module is imported:
+
+The __name__ variable is set to the module's name.
+This prevents certain code from running when the module is imported.
+eg:-
+# my_module.py
+
+def main():
+    print("This is the main function.")
+
+if __name__ == "__main__":
+    main()
+
+---------------------------------------------------------------------------------------------------------------------------
+#Why is it helpfull-
+if  you are writting a python code ,and thier ia particular thing which you want to show to the user then we write this code 
+with this condiyion:(if _name_ == "_main_":main())

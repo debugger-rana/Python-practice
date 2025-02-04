@@ -1,0 +1,48 @@
+A module in Python is a file containing Python definitions and statements. 
+It can define functions, classes, and variables, and can also include runnable code. 
+Modules help in logically organizing the code, making it easier to understand and use
+1
+.
+
+Creating a module:
+# calc.py
+def add(x, y):
+return x + y
+
+def subtract(x, y):
+return x - y
+
+#Importing a Module
+import calc
+print(calc.add(10, 2)) # Output: 12
+
+#Importing Specific Attributes
+from math import sqrt, factorial
+print(sqrt(16)) # Output: 4.0
+print(factorial(6)) # Output: 720
+
+#Renaming a Module
+import math as mt
+print(mt.sqrt(16)) # Output: 4.0
+print(mt.factorial(6)) # Output: 720
+
+#Built-in Modules
+import math
+print(math.sqrt(25)) # Output: 5.0
+print(math.pi) # Output: 3.141592653589793
+
+#Listing All Modules
+To list all available modules in Python, you can use the help() function in a Python interpreter session or
+ the pkgutil module programmatically:
+eg:-
+import pkgutil
+for module in pkgutil.iter_modules():
+print(module.name)
+This script will print the names of all modules currently installed in your Python environment
+
+
+Conclusion
+Modules in Python are essential for organizing and reusing code. They allow you to group related functions, 
+classes, and variables into a single file, making your code more modular and maintainable. 
+By using modules, you can import and use code from other files, rename modules, and 
+access built-in modules provided by Python
